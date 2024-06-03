@@ -1,0 +1,25 @@
+{% if resume.publications.size > 0 %}
+<section>
+  <h2 id="publications"><i class="fa fa-book fa-fw"></i> Publications</h2>
+
+  {% for publication in resume.publications %}
+  <section class="avoid-break">
+    <h3 class="h5">{{ publication.name }}</h3>
+
+    <ul class="list-unstyled timeline">
+      <li>
+        {{ publication.publisher }} {% if publication.releaseDate %} ({{ publication.releaseDate | date: '%B %Y' }}) {% endif %}
+        {% if publication.url %} - <a href="{{ publication.url }}">{{ publication.url }}</a>{% endif %}
+      </li>
+    </ul>
+
+    {% if publication.summary %}
+    <blockquote>{{ publication.summary }}</blockquote>
+    {% endif %}
+
+    {% unless forloop.last %}
+    <hr>{% endunless %}
+  </section>
+  {% endfor %}
+</section>
+{% endif %}

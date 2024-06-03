@@ -1,0 +1,50 @@
+{% if resume.volunteer.size > 0 %}
+  <section>
+    <h2 id="volunteer-experience"><i class="fa fa-handshake-angle fa-fw"></i> Volunteer Experience</h2>
+
+    {% assign volunteer_by_organization = resume.volunteer | group_by: 'organization' %}
+    {% for volunteer in volunteer_by_organization %}
+    <section class="avoid-break">
+      {% assign first_position = volunteer.items | first %}
+
+      <div class="d-flex">
+        {% if first_position.image %}
+        <div class="pe-2">
+          <a href="{{ first_position.url }}"><img src="{{ first_position.image }}" alt="Logo" class="img-fluid" style="width:48px;"></a>
+        </div>
+        {% endif %}
+        <div class="flex-grow-1">
+          <h3 class="h5 m-0"><a href="{{ first_position.url }}">{{ first_position.organization }}</a></h3>
+          <p class="small text-muted">{% if first_position.location %}{{ first_position.location }} &bull; {% endif %}
+            {{ '' | dateDiff: volunteer.items.last.startDate, volunteer.items.first.endDate }}
+          </p>
+        </div>
+      </div>
+
+      <ul class="list-unstyled timeline">
+        {% for position in volunteer.items %}
+        <li class="{% unless position.endDate %}active{% endunless %}">
+          {{ position.position | default: 'Volunteer' }}
+          {% if position.startDate and position.endDate %}
+          ({{ position.startDate | date: '%B %Y' }} - {{ position.endDate | date: '%B %Y' }})
+          {% elsif position.startDate %}
+          ({{ position.startDate | date: '%B %Y' }} - Present)
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+
+      <blockquote>{{ first_position.summary }}</blockquote>
+
+      {% if first_position.highlights.size > 0 %}
+        <p class="small">
+          <strong>Highlights:</strong> {{ first_position.highlights | join: '; ' }}
+        </p>
+      {% endif %}
+
+      {% unless forloop.last %}
+      <hr>{% endunless %}
+    </section>
+    {% endfor %}
+  </section>
+  {% endif %}

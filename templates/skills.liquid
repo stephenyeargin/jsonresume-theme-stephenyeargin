@@ -1,0 +1,19 @@
+{%  if resume.skills.size > 0 %}
+<section>
+  <h2 id="technical-skills"><i class="fa fa-laptop-code fa-fw"></i> Technical Skills</h2>
+  {% for skill in resume.skills %}
+  <section class="avoid-break">
+    <h3 class="h6">{{ skill.name }}</h3>
+    <div class="mb-2">
+      <ul class="list-inline">
+        {% for keyword in skill.keywords %}
+        <li class="list-inline-item m-0">
+          <span class="badge text-bg-info small">{{ keyword }}</span>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+  {% endfor %}
+</section>
+{% endif %}

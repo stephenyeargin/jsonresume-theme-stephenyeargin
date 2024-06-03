@@ -1,0 +1,27 @@
+{% if resume.projects.size > 0 %}
+<section>
+  <h2 id="projects"><i class="fa fa-archive fa-fw"></i> Projects</h2>
+
+  {% for project in resume.projects %}
+  <section class="avoid-break">
+    <h3 class="h5">{{ project.name }}</h3>
+
+    <ul class="list-unstyled timeline">
+      <li class="{% unless project.endDate %}active{% endunless %}">
+        {{ project.entity }}
+        {% if project.startDate or project.endDate %}({% endif %}
+        {%- if project.startDate %}{{ project.startDate | date: '%Y' }}{% endif %}
+        {%- if project.endDate %} - {{ project.endDate | date: '%Y' }}{% endif %}
+        {%- if project.startDate or project.endDate %}){% endif %}
+        {% if project.url %} - <a href="{{ project.url }}">{{ project.url }}</a>{% endif %}
+      </li>
+    </ul>
+
+    <blockquote>{{ project.description }}</blockquote>
+
+    {% unless forloop.last %}
+    <hr>{% endunless %}
+  </section>
+  {% endfor %}
+</section>
+{% endif %}

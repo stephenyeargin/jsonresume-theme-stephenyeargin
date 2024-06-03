@@ -1,0 +1,123 @@
+@import url('https://fonts.cdnfonts.com/css/hubot-sans');
+
+body {
+  font-family: "Hubot Sans", -apple-system, "system-ui", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+h1 {
+  margin: 2rem 0;
+}
+
+h2 {
+  margin-top: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: dotted 1pt #000;
+}
+
+/* Block quotes */
+blockquote {
+  border-left: solid 7px #c8c8c8;
+  padding-left: 1rem;
+}
+
+ul.timeline {
+  font-size: 0.75rem;
+  list-style: none;
+  margin-left: 0.8rem;
+}
+
+ul.timeline li {
+  position: relative;
+  padding: 0 10px;
+}
+
+ul.timeline li:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #c8c8c8;
+  position: absolute;
+  left: -12px;
+  top: 50%;
+  transform: translateY(-40%);
+}
+
+ul.timeline li:not(:last-child):after {
+  content: '';
+  width: 2px;
+  height: 100%;
+  background: #c8c8c8;
+  position: absolute;
+  left: -8px;
+  top: 50%;
+}
+
+ul.timeline li.active {
+  font-weight: bold;
+}
+
+ul.timeline li.active:before {
+  z-index: 100;
+  background: orange;
+}
+
+.avoid-break {
+  break-inside: avoid;
+}
+
+/* Printer Friendly */
+@media print {
+
+  body {
+    margin: 0;
+    color: black;
+    background-color: transparent;
+    background-image: none;
+    zoom: 0.65;
+  }
+
+  body img {
+    opacity: 1 !important;
+  }
+
+  body h1,
+  body .h1,
+  body .h1 {
+    color: #000 !important;
+    font-size: 18pt;
+  }
+
+  body h2,
+  body .h2,
+  body .h2 {
+    color: #000 !important;
+    font-size: 16pt;
+  }
+
+  body h3,
+  body .h3,
+  body .h3 {
+    color: #000 !important;
+    font-size: 14pt;
+  }
+
+  body a {
+    color: #000 !important;
+    text-decoration: none;
+  }
+
+  body hr {
+    margin: 1rem 0;
+    border-top: 3px double #333;
+  }
+
+  body hr::after {
+    display: none;
+  }
+
+  body .container {
+    width: 100%;
+    max-width: none !important;
+  }
+}

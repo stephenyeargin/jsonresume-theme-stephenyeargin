@@ -1,0 +1,21 @@
+{%  if resume.interests.size > 0 %}
+  <section>
+    <h2 id="interests"><i class="fa fa-puzzle-piece fa-fw"></i> Interests</h2>
+    {% for interest in resume.interests %}
+    <section class="avoid-break">
+      <h3 class="h6">{{ interest.name }}</h3>
+      {% if interest.keywords.size > 0 %}
+      <div class="mb-2">
+        <ul class="list-inline">
+          {% for keyword in interest.keywords %}
+          <li class="list-inline-item m-0">
+            <span class="badge text-bg-info small">{{ keyword }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif  %}
+    </section>
+    {% endfor %}
+  </section>
+  {% endif %}

@@ -1,0 +1,39 @@
+{% if resume.education.size > 0 %}
+  <section class="avoid-break">
+    <h2 id="education"><i class="fa fa-graduation-cap fa-fw"></i> Education</h2>
+
+    {% for education in resume.education %}
+    <section class="avoid-break">
+      <div class="d-flex">
+        {% if education.image %}
+        <div class="pe-2">
+          <a href="{{ education.url }}"><img src="{{ education.image }}" alt="Logo" class="img-fluid" style="width:48px;"></a>
+        </div>
+        {% endif %}
+        <div class="flex-grow-1">
+          <h3 class="h5 m-0">
+            {% if education.url %}
+            <a href="{{ education.url }}">{{ education.institution }}</a>
+            {% else %}
+            {{ education.institution }}
+            {% endif %}
+          </h3>
+          <p class="small opacity-50">{{ education.location }}</p>
+        </div>
+      </div>
+
+      <ul class="list-unstyled timeline">
+        <li>{{ education.studyType }} ({{ education.endDate | date: '%Y' }})</li>
+      </ul>
+
+      <blockquote>{{ education.area}}</blockquote>
+
+      {% if education.courses.size > 0 %}
+        <p class="small">
+          <strong>Courses:</strong> {{ education.courses | join: '; ' }}
+        </p>
+      {% endif %}
+    </section>
+    {% endfor %}
+  </section>
+  {% endif %}

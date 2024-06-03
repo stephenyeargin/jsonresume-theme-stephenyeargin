@@ -1,0 +1,22 @@
+{% if resume.awards.size > 0 %}
+  <section class="avoid-break">
+    <h2 id="awards"><i class="fa fa-trophy fa-fw"></i> Awards</h2>
+
+    {% for award in resume.awards %}
+    <section class="avoid-break">
+      <h3 class="h5 m-0">{{ award.title }}</h3>
+      <p class="small opacity-50">{{ award.awarder }}</p>
+      {% if award.date %}
+      <ul class="list-unstyled timeline">
+        <li class="active">Earned {{ award.date | date: '%B %Y' }}</li>
+      </ul>
+      {% endif %}
+      {% if award.summary %}
+      <blockquote>{{ award.summary }}</blockquote>
+      {% endif %}
+      {% unless forloop.last %}
+      <hr>{% endunless %}
+    </section>
+    {% endfor %}
+  </section>
+  {% endif %}

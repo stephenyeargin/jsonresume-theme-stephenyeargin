@@ -1,0 +1,32 @@
+{% if resume.certificates.size > 0 %}
+  <section class="avoid-break">
+    <h2 id="certifications"><i class="fa fa-certificate fa-fw"></i> Certifications</h2>
+
+    {% for certification in resume.certificates %}
+    <section class="avoid-break">
+      <div class="d-flex">
+        {% if certification.image %}
+        <div class="pe-2">
+          <a href="{{ certification.url }}"><img src="{{ certification.image }}" alt="Logo" class="img-fluid" style="width:48px;"></a>
+        </div>
+        {% endif %}
+        <div class="flex-grow-1">
+          <h3 class="h5 m-0"><a href="{{ certification.url }}">{{ certification.name }}</a></h3>
+          <p class="small opacity-50">{{ certification.issuer }}</p>
+        </div>
+      </div>
+      <ul class="list-unstyled timeline">
+        <li class="active">Earned {{ certification.date | date: '%B %Y' }}</li>
+        {% if certification.expires %}
+        <li>Expires {{ certification.expires | date: '%B %Y' }}</li>
+        {% endif %}
+      </ul>
+
+      <blockquote>Credential {{ certification.credential }}</blockquote>
+
+      {% unless forloop.last %}
+      <hr>{% endunless %}
+    </section>
+    {% endfor %}
+  </section>
+  {% endif %}

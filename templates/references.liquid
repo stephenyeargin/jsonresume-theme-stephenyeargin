@@ -1,0 +1,20 @@
+{% if resume.references.size > 0 %}
+  <section class="avoid-break">
+    <h2 id="references"><i class="fa fa-comments fa-fw"></i> References</h2>
+
+    {% for reference in resume.references %}
+    <section class="avoid-break">
+      <figure>
+        <blockquote class="blockquote">
+          <p>{{ reference.reference }}</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+          <cite title="Source Title">{{ reference.name }}</cite>
+        </figcaption>
+      </figure>
+      {% unless forloop.last %}
+      <hr>{% endunless %}
+    </section>
+    {% endfor %}
+  </section>
+  {% endif %}

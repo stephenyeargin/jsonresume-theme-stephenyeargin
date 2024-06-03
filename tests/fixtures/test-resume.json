@@ -1,0 +1,160 @@
+{
+  "basics": {
+    "name": "Jane Doe",
+    "label": "Senior Software Engineer",
+    "image": "",
+    "email": "jane.doe@example.com",
+    "phone": "(123) 555-7890",
+    "url": "https://example.com",
+    "summary": "Experienced software engineer with a passion for developing innovative programs that expedite the efficiency and effectiveness of organizational success.",
+    "location": {
+      "address": "123 Main Street",
+      "postalCode": "CA 12345",
+      "city": "Tech City",
+      "countryCode": "US",
+      "region": "California"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "janedoe",
+        "url": "https://example.com/linkedin/janedoe"
+      },
+      {
+        "network": "GitHub",
+        "username": "janedoe",
+        "url": "https://example.com/github/janedoe"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Tech Solutions Inc.",
+      "location": "Tech City, California",
+      "description": "A leading tech company specializing in software solutions.",
+      "position": "Senior Software Engineer",
+      "url": "https://example.com/tech-solutions",
+      "startDate": "2023-01-01",
+      "summary": "Led a team of developers to create cutting-edge software applications.",
+      "highlights": [
+        "Developed a high-performance web application used by millions of users.",
+        "Optimized database queries, reducing response times by 30%."
+      ]
+    },
+    {
+      "name": "Tech Solutions Inc.",
+      "location": "Tech City, California",
+      "position": "Software Engineer",
+      "startDate": "2018-01-01",
+      "endDate": "2023-01-01"
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Girls Who Code",
+      "position": "Volunteer Instructor",
+      "url": "https://example.com/girlswhocode",
+      "startDate": "2019-01-01",
+      "endDate": "Present",
+      "summary": "Taught coding to middle and high school girls, encouraging them to pursue careers in technology.",
+      "highlights": [
+        "Mentored over 50 students, many of whom went on to pursue CS degrees.",
+        "Developed a curriculum that was adopted by multiple chapters."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of California, Berkeley",
+      "url": "https://example.com/ucberkeley",
+      "area": "Computer Science",
+      "studyType": "Bachelor of Science",
+      "startDate": "2012-08-01",
+      "endDate": "2016-05-01",
+      "score": "3.8 GPA",
+      "courses": [
+        "CS 101: Introduction to Computer Science",
+        "CS 102: Data Structures",
+        "CS 103: Algorithms"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Best Software Engineer",
+      "date": "2020-12-01",
+      "awarder": "Tech Solutions Inc.",
+      "summary": "Awarded for outstanding performance and dedication to software development."
+    }
+  ],
+  "publications": [
+    {
+      "name": "Efficient Algorithms for Large Data Sets",
+      "publisher": "Tech Journal",
+      "releaseDate": "2021-06-01",
+      "url": "https://example.com/efficient-algorithms",
+      "summary": "A research paper on optimizing algorithms for handling large-scale data."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "level": "Master",
+      "keywords": [
+        "Python",
+        "JavaScript",
+        "C++",
+        "Java"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Professional working proficiency"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Artificial Intelligence",
+      "keywords": [
+        "Machine Learning",
+        "Deep Learning",
+        "Neural Networks"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "John Smith",
+      "reference": "Jane is a highly skilled and dedicated software engineer with a keen eye for detail."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Smart Home Automation System",
+      "description": "A comprehensive system to automate home appliances and security.",
+      "highlights": [
+        "Implemented voice control using natural language processing.",
+        "Integrated with various IoT devices for seamless automation."
+      ],
+      "keywords": [
+        "IoT",
+        "NLP",
+        "Home Automation"
+      ],
+      "startDate": "2022-01-01",
+      "endDate": "2022-12-01",
+      "url": "https://example.com/smart-home-automation",
+      "roles": [
+        "Lead Developer"
+      ],
+      "entity": "Personal Project",
+      "type": "application"
+    }
+  ]
+}

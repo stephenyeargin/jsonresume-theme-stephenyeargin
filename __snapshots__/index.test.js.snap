@@ -1,0 +1,549 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render should render 1`] = `
+"<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Jane Doe</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+  <style>
+    @import url('https://fonts.cdnfonts.com/css/hubot-sans');
+
+body {
+  font-family: "Hubot Sans", -apple-system, "system-ui", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+h1 {
+  margin: 2rem 0;
+}
+
+h2 {
+  margin-top: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: dotted 1pt #000;
+}
+
+/* Block quotes */
+blockquote {
+  border-left: solid 7px #c8c8c8;
+  padding-left: 1rem;
+}
+
+ul.timeline {
+  font-size: 0.75rem;
+  list-style: none;
+  margin-left: 0.8rem;
+}
+
+ul.timeline li {
+  position: relative;
+  padding: 0 10px;
+}
+
+ul.timeline li:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #c8c8c8;
+  position: absolute;
+  left: -12px;
+  top: 50%;
+  transform: translateY(-40%);
+}
+
+ul.timeline li:not(:last-child):after {
+  content: '';
+  width: 2px;
+  height: 100%;
+  background: #c8c8c8;
+  position: absolute;
+  left: -8px;
+  top: 50%;
+}
+
+ul.timeline li.active {
+  font-weight: bold;
+}
+
+ul.timeline li.active:before {
+  z-index: 100;
+  background: orange;
+}
+
+.avoid-break {
+  break-inside: avoid;
+}
+
+/* Printer Friendly */
+@media print {
+
+  body {
+    margin: 0;
+    color: black;
+    background-color: transparent;
+    background-image: none;
+    zoom: 0.65;
+  }
+
+  body img {
+    opacity: 1 !important;
+  }
+
+  body h1,
+  body .h1,
+  body .h1 {
+    color: #000 !important;
+    font-size: 18pt;
+  }
+
+  body h2,
+  body .h2,
+  body .h2 {
+    color: #000 !important;
+    font-size: 16pt;
+  }
+
+  body h3,
+  body .h3,
+  body .h3 {
+    color: #000 !important;
+    font-size: 14pt;
+  }
+
+  body a {
+    color: #000 !important;
+    text-decoration: none;
+  }
+
+  body hr {
+    margin: 1rem 0;
+    border-top: 3px double #333;
+  }
+
+  body hr::after {
+    display: none;
+  }
+
+  body .container {
+    width: 100%;
+    max-width: none !important;
+  }
+}
+
+  </style>
+  <script>
+    
+  </script>
+</head>
+
+<body>
+
+  <div class="container">
+    <div>
+      <h1>Jane Doe<span class="text-muted fw-lighter fw-italic">, Senior Software Engineer</span></h1>
+
+      <div class="d-flex">
+        <div class="align-self-center flex-grow-1">
+          <blockquote class="lead py-3 clear">
+            Experienced software engineer with a passion for developing innovative programs that expedite the efficiency and effectiveness of organizational success.
+          </blockquote>
+        </div>
+        
+      </div>
+
+      <div class="row">
+        <div class="col-8">
+
+          
+<section>
+  <h2 id="professional-experience"><i class="fa fa-briefcase fa-fw"></i> Professional Experience</h2>
+
+  
+  
+  <section class="avoid-break">
+    
+
+    <div class="d-flex">
+      
+      <div class="flex-grow-1">
+        <h3 class="h5 m-0">
+          
+          <a href="https://example.com/tech-solutions">Tech Solutions Inc.</a>
+          
+        </h3>
+        <p class="small text-muted">Tech City, California &bull; 
+          6 years, 6 months
+        </p>
+      </div>
+    </div>
+
+    <ul class="list-unstyled timeline">
+      
+      <li class="active">
+        Senior Software Engineer
+        
+        <meta content="Led a team of developers to create cutting-edge software applications.">
+        
+        <meta content="2023-01-01">
+        
+        
+        (December 2022 - Present)
+        
+      </li>
+      
+      <li class="">
+        Software Engineer
+        
+        
+        <meta content="2018-01-01">
+        
+        <meta content="2023-01-01">
+        
+        (December 2017 - December 2022)
+        
+      </li>
+      
+    </ul>
+
+    <blockquote>Led a team of developers to create cutting-edge software applications.</blockquote>
+
+    
+    <p class="small">
+      <strong>Highlights:</strong> Developed a high-performance web application used by millions of users.; Optimized database queries, reducing response times by 30%.
+    </p>
+    
+
+    
+
+    
+  </section>
+  
+</section>
+
+
+
+          
+  <section>
+    <h2 id="volunteer-experience"><i class="fa fa-handshake-angle fa-fw"></i> Volunteer Experience</h2>
+
+    
+    
+    <section class="avoid-break">
+      
+
+      <div class="d-flex">
+        
+        <div class="flex-grow-1">
+          <h3 class="h5 m-0"><a href="https://example.com/girlswhocode">Girls Who Code</a></h3>
+          <p class="small text-muted">
+            
+          </p>
+        </div>
+      </div>
+
+      <ul class="list-unstyled timeline">
+        
+        <li class="">
+          Volunteer Instructor
+          
+          (December 2018 - Present)
+          
+        </li>
+        
+      </ul>
+
+      <blockquote>Taught coding to middle and high school girls, encouraging them to pursue careers in technology.</blockquote>
+
+      
+        <p class="small">
+          <strong>Highlights:</strong> Mentored over 50 students, many of whom went on to pursue CS degrees.; Developed a curriculum that was adopted by multiple chapters.
+        </p>
+      
+
+      
+    </section>
+    
+  </section>
+  
+
+
+          
+<section>
+  <h2 id="projects"><i class="fa fa-archive fa-fw"></i> Projects</h2>
+
+  
+  <section class="avoid-break">
+    <h3 class="h5">Smart Home Automation System</h3>
+
+    <ul class="list-unstyled timeline">
+      <li class="">
+        Personal Project
+        (2021 - 2022)
+         - <a href="https://example.com/smart-home-automation">https://example.com/smart-home-automation</a>
+      </li>
+    </ul>
+
+    <blockquote>A comprehensive system to automate home appliances and security.</blockquote>
+
+    
+  </section>
+  
+</section>
+
+
+
+          
+<section>
+  <h2 id="publications"><i class="fa fa-book fa-fw"></i> Publications</h2>
+
+  
+  <section class="avoid-break">
+    <h3 class="h5">Efficient Algorithms for Large Data Sets</h3>
+
+    <ul class="list-unstyled timeline">
+      <li>
+        Tech Journal  (May 2021) 
+         - <a href="https://example.com/efficient-algorithms">https://example.com/efficient-algorithms</a>
+      </li>
+    </ul>
+
+    
+    <blockquote>A research paper on optimizing algorithms for handling large-scale data.</blockquote>
+    
+
+    
+  </section>
+  
+</section>
+
+
+
+          
+  <section class="avoid-break">
+    <h2 id="awards"><i class="fa fa-trophy fa-fw"></i> Awards</h2>
+
+    
+    <section class="avoid-break">
+      <h3 class="h5 m-0">Best Software Engineer</h3>
+      <p class="small opacity-50">Tech Solutions Inc.</p>
+      
+      <ul class="list-unstyled timeline">
+        <li class="active">Earned November 2020</li>
+      </ul>
+      
+      
+      <blockquote>Awarded for outstanding performance and dedication to software development.</blockquote>
+      
+      
+    </section>
+    
+  </section>
+  
+
+
+        </div>
+
+        <div class="col-4">
+          <section>
+  <h2 id="connect"><i class="fa fa-user fa-fw"></i> Connect</h2>
+
+  <dl class="row">
+    <dt class="col-1 text-center">
+      <i class="fa fa-location-pin fa-fw"></i>
+      <span class="sr-only">Location</span>
+    </dt>
+    
+    <dd class="col-11">
+      123 Main Street<br>
+      Tech City, CA 12345 US
+    </dd>
+    
+    <dt class="col-1 text-center">
+      <i class="fa fa-mobile fa-fw"></i>
+      <span class="sr-only">Phone</span>
+    </dt>
+    <dd class="col-11">(123) 555-7890</dd>
+    
+    <dt class="col-1 text-center">
+      <i class="fa fa-envelope fa-fw"></i>
+      <span class="sr-only">Email</span>
+    </dt>
+    <dd class="col-11"><a href="mailto:jane.doe@example.com">jane.doe@example.com</a></dd>
+    
+    
+    <dt class="col-1 text-center">
+      <i class="fa fa-language fa-fw"></i>
+      <span class="sr-only">Language</span>
+    </dt>
+    <dd class="col-11 text-truncate">
+      English (Native)
+    </dd>
+    
+    <dt class="col-1 text-center">
+      <i class="fa fa-language fa-fw"></i>
+      <span class="sr-only">Language</span>
+    </dt>
+    <dd class="col-11 text-truncate">
+      Spanish (Professional working proficiency)
+    </dd>
+    
+    
+    
+    
+    <dt class="col-1 text-center">
+      
+      <i class="fab fa-linkedin fa-fw"></i>
+      
+      <span class="sr-only">LinkedIn</span>
+    </dt>
+    <dd class="col-11 text-truncate"><a href="https://example.com/linkedin/janedoe" rel="me">https://example.com/linkedin/janedoe</a></dd>
+    
+    
+    <dt class="col-1 text-center">
+      
+      <i class="fab fa-github fa-fw"></i>
+      
+      <span class="sr-only">GitHub</span>
+    </dt>
+    <dd class="col-11 text-truncate"><a href="https://example.com/github/janedoe" rel="me">https://example.com/github/janedoe</a></dd>
+    
+  </dl>
+</section>
+
+
+          
+  <section class="avoid-break">
+    <h2 id="education"><i class="fa fa-graduation-cap fa-fw"></i> Education</h2>
+
+    
+    <section class="avoid-break">
+      <div class="d-flex">
+        
+        <div class="flex-grow-1">
+          <h3 class="h5 m-0">
+            
+            <a href="https://example.com/ucberkeley">University of California, Berkeley</a>
+            
+          </h3>
+          <p class="small opacity-50"></p>
+        </div>
+      </div>
+
+      <ul class="list-unstyled timeline">
+        <li>Bachelor of Science (2016)</li>
+      </ul>
+
+      <blockquote>Computer Science</blockquote>
+
+      
+        <p class="small">
+          <strong>Courses:</strong> CS 101: Introduction to Computer Science; CS 102: Data Structures; CS 103: Algorithms
+        </p>
+      
+    </section>
+    
+  </section>
+  
+
+
+          
+<section>
+  <h2 id="technical-skills"><i class="fa fa-laptop-code fa-fw"></i> Technical Skills</h2>
+  
+  <section class="avoid-break">
+    <h3 class="h6">Programming Languages</h3>
+    <div class="mb-2">
+      <ul class="list-inline">
+        
+        <li class="list-inline-item m-0">
+          <span class="badge text-bg-info small">Python</span>
+        </li>
+        
+        <li class="list-inline-item m-0">
+          <span class="badge text-bg-info small">JavaScript</span>
+        </li>
+        
+        <li class="list-inline-item m-0">
+          <span class="badge text-bg-info small">C++</span>
+        </li>
+        
+        <li class="list-inline-item m-0">
+          <span class="badge text-bg-info small">Java</span>
+        </li>
+        
+      </ul>
+    </div>
+  </section>
+  
+</section>
+
+
+
+          
+
+
+          
+  <section>
+    <h2 id="interests"><i class="fa fa-puzzle-piece fa-fw"></i> Interests</h2>
+    
+    <section class="avoid-break">
+      <h3 class="h6">Artificial Intelligence</h3>
+      
+      <div class="mb-2">
+        <ul class="list-inline">
+          
+          <li class="list-inline-item m-0">
+            <span class="badge text-bg-info small">Machine Learning</span>
+          </li>
+          
+          <li class="list-inline-item m-0">
+            <span class="badge text-bg-info small">Deep Learning</span>
+          </li>
+          
+          <li class="list-inline-item m-0">
+            <span class="badge text-bg-info small">Neural Networks</span>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </section>
+    
+  </section>
+  
+
+
+          
+  <section class="avoid-break">
+    <h2 id="references"><i class="fa fa-comments fa-fw"></i> References</h2>
+
+    
+    <section class="avoid-break">
+      <figure>
+        <blockquote class="blockquote">
+          <p>Jane is a highly skilled and dedicated software engineer with a keen eye for detail.</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+          <cite title="Source Title">John Smith</cite>
+        </figcaption>
+      </figure>
+      
+    </section>
+    
+  </section>
+  
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+"
+`;

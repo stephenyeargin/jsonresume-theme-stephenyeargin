@@ -1,0 +1,66 @@
+{% if resume and resume.work.size > 0 %}
+<section>
+  <h2 id="professional-experience"><i class="fa fa-briefcase fa-fw"></i> Professional Experience</h2>
+
+  {% assign work_by_name = resume.work | group_by: 'name' %}
+  {% for work in work_by_name %}
+  <section class="avoid-break">
+    {% assign first_position = work.items | first %}
+
+    <div class="d-flex">
+      {% if first_position.image %}
+      <div class="pe-2">
+        <a href="{{ first_position.url }}"><img src="{{ first_position.image }}" alt="Logo" class="img-fluid" style="width:48px;"></a>
+      </div>
+      {% endif %}
+      <div class="flex-grow-1">
+        <h3 class="h5 m-0">
+          {% if first_position.url %}
+          <a href="{{ first_position.url }}">{{ first_position.name }}</a>
+          {% else %}
+          {{ first_position.name }}
+          {% endif %}
+        </h3>
+        <p class="small text-muted">{% if first_position.location %}{{ first_position.location }} &bull; {% endif %}
+          {{ '' | dateDiff: work.items.last.startDate, work.items.first.endDate }}
+        </p>
+      </div>
+    </div>
+
+    <ul class="list-unstyled timeline">
+      {% for position in work.items %}
+      <li class="{% unless position.endDate %}active{% endunless %}">
+        {{ position.position }}
+        {% if position.summary %}
+        <meta content="{{ position.summary | escape_once }}">{% endif %}
+        {% if position.startDate %}
+        <meta content="{{ position.startDate }}">{% endif %}
+        {% if position.endDate %}
+        <meta content="{{ position.endDate }}">{% endif %}
+        {% if position.startDate and position.endDate %}
+        ({{ position.startDate | date: '%B %Y' }} - {{ position.endDate | date: '%B %Y' }})
+        {% elsif position.startDate %}
+        ({{ position.startDate | date: '%B %Y' }} - Present)
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+
+    <blockquote>{{ first_position.summary }}</blockquote>
+
+    {% if first_position.highlights.size > 0 %}
+    <p class="small">
+      <strong>Highlights:</strong> {{ first_position.highlights | join: '; ' }}
+    </p>
+    {% endif %}
+
+    {% if first_position.technologies.size > 0 %}
+    <p class="small"><strong>Technology:</strong> {{ first_position.technologies | join: ', ' }}</p>
+    {% endif %}
+
+    {% unless forloop.last %}
+    <hr>{% endunless %}
+  </section>
+  {% endfor %}
+</section>
+{% endif %}
