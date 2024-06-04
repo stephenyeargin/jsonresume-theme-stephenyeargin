@@ -5,13 +5,19 @@ const { dateDiff } = require('./lib/filters');
 
 const render = (resume) => {
   try {
-    const engine = new Liquid();
+    const engine = new Liquid({
+      root: `${__dirname}/templates`,
+      ext: '.liquid',
+      dynamicPartials: true,
+      strictVariables: false,
+      strictFilters: false,
+    });
     engine.registerFilter('dateDiff', dateDiff);
-    const template = fs.readFileSync('./templates/base.liquid', 'utf8');
+    const template = fs.readFileSync(`${__dirname}/templates/base.liquid`, 'utf8');
 
     // Inline CSS into the template
     resume.meta = resume.meta || {};
-    resume.meta.css = fs.readFileSync('./resources/style.css', 'utf8');
+    resume.meta.css = fs.readFileSync(`${__dirname}/resources/style.css`, 'utf8');
 
     return engine.parseAndRender(template, { resume });
   } catch (error) {
