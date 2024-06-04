@@ -1,7 +1,7 @@
 {
   "name": "jsonresume-theme-stephenyeargin",
   "version": "0.0.0",
-  "description": "Stephen Yeargin's JSONResume Theme",
+  "description": "Stephen Yeargin's JSON Resume Theme",
   "author": "stephen@yearg.in",
   "main": "index.js",
   "repository": {

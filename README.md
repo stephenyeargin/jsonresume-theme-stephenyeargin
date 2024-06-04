@@ -1,8 +1,10 @@
 # `jsonresume-theme-stephenyeargin`
 
-My JSON Resume Theme.
+![screenshot](./screenshot.png)
 
-* Updates to latest version of the specification
+My [JSON Resume](https://jsonresume.org) theme.
+
+* Updated to latest version of the specification
 * Consolidates position changes at same employer, uses most recent description
-* Uses LiquidJS instead of handlebars for more flexibility
+* Uses LiquidJS instead of Handlebars for more logic flexibility
 * Print / PDF friendly design
