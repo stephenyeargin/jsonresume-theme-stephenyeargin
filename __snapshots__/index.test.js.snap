@@ -178,7 +178,7 @@ ul.timeline li.active:before {
           
         </h3>
         <p class="small text-muted">Tech City, California &bull; 
-          6 years, 5 months
+          6 years, 6 months
         </p>
       </div>
     </div>
@@ -351,7 +351,7 @@ ul.timeline li.active:before {
 
         <div class="col-4">
           <section>
-  <h2 id="connect"><i class="fa fa-user fa-fw"></i> Connect</h2>
+  <h2 id="connect"><i class="fa fa-handshake fa-fw"></i> Connect</h2>
 
   <dl class="row">
     <dt class="col-1 text-center">

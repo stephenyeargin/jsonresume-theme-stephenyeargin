@@ -16,6 +16,11 @@ jobs:
       with:
         node-version: '20'
 
+    - name: Setup headless browser
+      run: |
+        sudo apt update
+        sudo apt install chromium-bsu chromium-browser -y
+
     - name: Install dependencies
       run: |
         npm ci
