@@ -10,7 +10,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "liquidjs": "^10.25.0"
+    "liquidjs": "^10.25.5"
   },
   "devDependencies": {
     "eslint": "^8.45.0",
